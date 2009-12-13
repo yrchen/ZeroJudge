@@ -1,3 +1,10 @@
+/**********************************************************************************/  
+/*  Problem: d488 "º∆¶r¨€•[" from æ«©n                                      */  
+/*  Language: C++                                                                 */  
+/*  Result: AC (34ms, 1656KB) on ZeroJudge                                        */  
+/*  Author: chchwy at 2009-11-30 13:46:25                                         */  
+/**********************************************************************************/  
+  
 #include<iostream>  
 using namespace std;  
   
@@ -14,7 +21,7 @@ int add(int depth, int sum){
 }  
   
 int main(){  
-    int depth; //ÈÅûËø¥Ê∑±Â∫¶  
+    int depth; //ªº∞j≤`´◊  
     while(scanf("%d",&depth)==1){  
         if(depth==0) break;  
   
@@ -22,4 +29,3 @@ int main(){
         printf(" = %d\n", sum);  
     }  
 } 
-

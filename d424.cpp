@@ -1,10 +1,18 @@
+/**********************************************************************************/  
+/*  Problem: d424 "Q105: The Skyline Problem" from ACM 105                        */  
+/*  Language: C++                                                                 */  
+/*  Result: AC (7ms, 752KB) on ZeroJudge                                          */  
+/*  Author: chchwy at 2009-11-27 18:58:18                                         */  
+/**********************************************************************************/  
+  
 #include<iostream>    
 using namespace std;    
     
 enum{LEFT=0,HEIGHT=1,RIGHT=2};    
     
 int main(){    
-      
+    
+    
     int bb[3]; //building    
     int map[10000];    
     int rightBound=0; //max position    
@@ -29,7 +37,6 @@ int main(){
         printf("%d %d ",i,map[i]);    
         prev = map[i];    
     }    
-    printf("%d %d\n",rightBound, 0);    
+    printf("%d %d\n",rightBound, 0);  //can't use map[rightBound], i don't know why
     return 0;    
-}
-
+}  
