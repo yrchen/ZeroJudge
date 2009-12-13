@@ -5,22 +5,25 @@
 /*  Author: chchwy at 2009-11-10 18:38:21                                         */  
 /**********************************************************************************/  
   
-#include<iostream>  
+#include<cstdio>
+#include<climits>
 int main(){  
   
-    int x=0;  
-  
+    int x;  
     while( scanf("%d",&x)==1 ){  
-        int flag=false;  
-        unsigned int y = INT_MIN;  
+	
+  		if(x==0){puts("0"); continue;}
   
-        while(y!=0){  
-            char output = (x&y)?('1'):('0');  
-            if(!flag && output=='1')  
-                flag=true;  
-            if(flag)  
-                 putchar(output);  
-            y=y>>1;  
+  		unsigned int mask = INT_MIN;  //INT_MIN = 10000...0
+  
+  		//ignore leading zeros
+  		while( (x&mask) == 0 )
+			mask=mask>>1;
+
+        while(mask!=0){  
+            char c = (x&mask) ? '1' : '0' ;  
+            putchar(c);  
+            mask=mask>>1;  
         }  
         putchar('\n');  
     }  
