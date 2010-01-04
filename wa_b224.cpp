@@ -52,19 +52,18 @@ int main(){
 		//read map
 		int map[100][100];
 		int cat_x,cat_y;
-		for(int i=0;i<line;++i)
+		for(int i=0;i<line;++i){
 			for(int j=0;j<100;++j){
 
 				char c = getchar();
-				if(c=='\n')
-					break;
+				if(c=='\n') break;
 
 				if(c=='#') map[i][j]=WALL;
 				else if(c=='.') map[i][j]=SPACE;
 				else if(c=='@') map[i][j]=MOUSE;
 				else if(c=='K') { cat_x=i; cat_y=j; }
 			}
-
+		}
 		//use BFS to find the nearest of mouse;
 		int findMouse = BFS(point(cat_x,cat_y),map);
 
