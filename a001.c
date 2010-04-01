@@ -6,9 +6,12 @@
 /**********************************************************************************/  
 
 #include<stdio.h>  
+
 int main(){  
 	char buf[2048];  
 	while( fgets(buf, sizeof(buf), stdin)!=NULL)
 		printf("hello, %s",buf);  
-	return 0;    
+	return 0;   
 }
+
+
