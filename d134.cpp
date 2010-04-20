@@ -9,8 +9,6 @@
 #include<iostream>
 using namespace std;
 
-const double EPS = 0.00000001;
-
 long double C(int n,int r){
 	if(n-r<r) r=n-r; // C(5,3)==C(5,2)
 
@@ -18,7 +16,7 @@ long double C(int n,int r){
 	for(int i=1; i<=r; i++){
 		product = product*(n-r+i)/i;
 	}
-	return (product + EPS);
+	return product;
 }
 
 int main(){
