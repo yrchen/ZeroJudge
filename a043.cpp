@@ -7,7 +7,6 @@ int main(){
 		else if(line==0) puts("1");
 		else
 			printf("%d\n", 2+(2+line)*(line-1)/2 );
-	
 	}
 	return 0;
 }
