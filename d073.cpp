@@ -5,9 +5,10 @@
 /*  Author: chchwy at 2009-11-12 10:17:59                                         */
 /**********************************************************************************/
 #include<iostream>
-int main() {
+int main()
+{
     int num;
-    while (scanf("%d", &num)==1)
-        printf("%d\n", (num-1)/3 + 1 );
-	return 0;
+    while (scanf("%d", &num) == 1)
+        printf("%d\n", (num - 1) / 3 + 1 );
+    return 0;
 }

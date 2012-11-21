@@ -7,17 +7,18 @@
 
 #include<iostream>
 
-int main() {
-
+int main()
+{
     int num;
-    while (scanf("%d", &num)==1) {
-
-        int max=0;
-        for (int i=0;i<num;++i) {
+    while (scanf("%d", &num) == 1)
+    {
+        int max = 0;
+        for (int i = 0; i < num; ++i)
+        {
             int tmp;
             scanf("%d", &tmp);
-            if (tmp>max)
-                max=tmp;
+            if (tmp > max)
+                max = tmp;
         }
         printf("%d\n", max);
     }

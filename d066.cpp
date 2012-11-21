@@ -7,10 +7,12 @@
 
 #include<iostream>
 
-int main() {
-    int h,m;
-    while ( scanf("%d %d",&h,&m)==2 ) {
-        if ( (h>7 && h<17) || (h==7 && m>=30) )
+int main()
+{
+    int h, m;
+    while ( scanf("%d %d", &h, &m) == 2 )
+    {
+        if ( (h > 7 && h < 17) || (h == 7 && m >= 30) )
             puts("At School");
         else
             puts("Off School");

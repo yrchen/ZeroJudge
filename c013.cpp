@@ -7,33 +7,35 @@
 
 #include<iostream>
 
-void wave(int A){
-    int curA=1;
-    while(curA<A){
-        for(int i=0;i<curA;++i)
-            printf("%d",curA);
+void wave(int A)
+{
+    int curA = 1;
+    while (curA < A)
+    {
+        for (int i = 0; i < curA; ++i)
+            printf("%d", curA);
         printf("\n");
-
         ++curA;
     }
-    while(curA>0){
-        for(int i=0;i<curA;++i)
-            printf("%d",curA);
+    while (curA > 0)
+    {
+        for (int i = 0; i < curA; ++i)
+            printf("%d", curA);
         printf("\n");
-
         --curA;
     }
 }
 
-int main(){
+int main()
+{
     int caseNum;
     scanf("%d", &caseNum);
-
-    while(caseNum--){
-        int A,F;
-        scanf("%d%d", &A,&F);
-
-        for(int i=0;i<F;++i){
+    while (caseNum--)
+    {
+        int A, F;
+        scanf("%d%d", &A, &F);
+        for (int i = 0; i < F; ++i)
+        {
             wave(A);
             printf("\n");
         }

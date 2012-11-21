@@ -6,19 +6,17 @@
 /**********************************************************************************/
 #include<cstdio>
 
-int main(){
-
+int main()
+{
     char key[] = "`1234567890-=QWERTYUIOP[]\\ASDFGHJKL;'ZXCVBNM,./";
-
     //build map
     char map[256];
-    for(int i=0; key[i]!=NULL; ++i)
-        map[ key[i] ] = key[i-1];
+    for (int i = 0; key[i] != NULL; ++i)
+        map[ key[i] ] = key[i - 1];
     map[' '] = ' ';
     map['\n'] = '\n';
-
     int c;
-    while((c=getchar())!=EOF)
+    while ((c = getchar()) != EOF)
         putchar(map[c]);
     return 0;
 }
