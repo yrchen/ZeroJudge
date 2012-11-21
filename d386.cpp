@@ -18,7 +18,7 @@ bool isPrime(int p){
     return true;  
 }  
   
-char p[10000]; //0¥¼´ú 1½è¼Æ 2«D½è¼Æ  
+char p[10000]; //0æœªæ¸¬ 1è³ªæ•¸ 2éè³ªæ•¸  
   
 int main(){  
     int a,b;  

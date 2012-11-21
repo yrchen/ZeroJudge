@@ -16,7 +16,7 @@ int main()
     int currentMove=0;  
     int totalGlasses=0;   
   
-    //¤»ºØ±Æ¦C²Õ¦X  
+    //å…­ç¨®æ’åˆ—çµ„åˆ  
     int binColor[][3]={ {B,C,G}, {B,G,C}, {C,B,G},  
                         {C,G,B}, {G,B,C}, {G,C,B}  };  
   
@@ -32,10 +32,10 @@ int main()
             totalGlasses += (bin[i][B] + bin[i][G] + bin[i][C]);  
   
         int minMove = totalGlasses;  
-        int minNo = 0; //²ÄminNo¸¹±Æ¦C²Õ¦Xmove³Ì¤Ö  
+        int minNo = 0; //ç¬¬minNoè™Ÿæ’åˆ—çµ„åˆmoveæœ€å°‘  
   
-        //¤»ºØ±Æ¦C²Õ¦X³£¶]¹L¤@¦¸  
-        for(int i=0;i<6;i++){ //²¾°Êªº¦¸¼Æ = Á`²~¼Æ-¤£¥Î²¾°Êªº²~¼Æ  
+        //å…­ç¨®æ’åˆ—çµ„åˆéƒ½è·‘éä¸€æ¬¡  
+        for(int i=0;i<6;i++){ //ç§»å‹•çš„æ¬¡æ•¸ = ç¸½ç“¶æ•¸-ä¸ç”¨ç§»å‹•çš„ç“¶æ•¸  
             currentMove = totalGlasses  
                 - bin[0][binColor[i][0]]  
                 - bin[1][binColor[i][1]]  

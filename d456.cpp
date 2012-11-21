@@ -1,5 +1,5 @@
 /**********************************************************************************/  
-/*  Problem: d456 "™¿øÏ¶X®÷" from raincole                                    */  
+/*  Problem: d456 "Á§æËæ¶Âêà‰Ωµ" from raincole                                    */  
 /*  Language: C++                                                                 */  
 /*  Result: AC (6ms, 764KB) on ZeroJudge                                          */  
 /*  Author: chchwy at 2009-11-17 19:50:30                                         */  

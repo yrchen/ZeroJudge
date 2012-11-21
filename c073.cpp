@@ -13,8 +13,8 @@ using namespace std;
 class Blocks{  
 private:  
     int size;  
-    vector<int> stk[25];//¤è¶ô°ï  
-    int pos[25]; //¬ö¿ı¨C­Óblock¥Ø«e¦b­ş­Óstack¸Ì  
+    vector<int> stk[25];//æ–¹å¡Šå †  
+    int pos[25]; //ç´€éŒ„æ¯å€‹blockç›®å‰åœ¨å“ªå€‹stackè£¡  
 public:  
     Blocks(int);  
     void treatSource(int,char*);  
@@ -38,7 +38,7 @@ void Blocks::treatSource(int a, char* cmd){
     // pile a: do nothing.  
     if( strcmp(cmd,"pile")==0 )  
         return;  
-    // move a: §âa¤W­±ªº³£·h¦^­ì³B  
+    // move a: æŠŠaä¸Šé¢çš„éƒ½æ¬å›åŸè™•  
     clearAbove(a);  
 }  
   
@@ -47,7 +47,7 @@ void Blocks::treatTarget(int b, char* cmd){
     // over b: do nothing about b.  
     if( strcmp(cmd,"over")==0 )  
         return;  
-    // onto b: §âb¤W­±ªº³£·h¦^­ì³B  
+    // onto b: æŠŠbä¸Šé¢çš„éƒ½æ¬å›åŸè™•  
     clearAbove(b);  
 }  
   

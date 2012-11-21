@@ -1,5 +1,5 @@
 /**********************************************************************************/  
-/*  Problem: d098 "Stringstream¹B¥Î½m²ß(C++)" from »¡©ú¤å¥ó¥X¦ÛC++ Reference*/  
+/*  Problem: d098 "Stringstreamé‹ç”¨ç·´ç¿’(C++)" from èªªæ˜æ–‡ä»¶å‡ºè‡ªC++ Reference*/  
 /*  Language: C++                                                                 */  
 /*  Result: AC (6ms, 780KB) on ZeroJudge                                          */  
 /*  Author: chchwy at 2009-11-17 20:48:19                                         */  

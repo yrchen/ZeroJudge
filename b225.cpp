@@ -1,5 +1,5 @@
 /**********************************************************************************/  
-/*  Problem: b225 "D. ¥Œ≤yΩm≤ﬂ" from 2008 NPSC ∞Í§§≤’®M¡…                */  
+/*  Problem: b225 "D. Ê£íÁêÉÁ∑¥Áøí" from 2008 NPSC Âúã‰∏≠ÁµÑÊ±∫Ë≥Ω                */  
 /*  Language: C++                                                                 */  
 /*  Result: AC (2ms, 684KB) on ZeroJudge                                          */  
 /*  Author: chchwy at 2009-12-12 14:00:14                                         */  
@@ -13,7 +13,7 @@ int main(){
   while(numCase--){  
     int x1,y1,x2,y2,x3,y3;  
     scanf("%d %d %d %d %d %d",&x1,&y1,&x2,&y2,&x3,&y3);  
-    //•~øn¨∞πs = §T¬I¶@Ωu
+    //Â§ñÁ©çÁÇ∫Èõ∂ = ‰∏âÈªûÂÖ±Á∑ö
     int out = (x2-x1)*(y3-y1)-(y2-y1)*(x3-x1);  
     if( out==0 ) puts("NO");  
     else puts("YES");  

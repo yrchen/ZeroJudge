@@ -1,5 +1,5 @@
 /**********************************************************************************/  
-/*  Problem: d488 "º∆¶r¨€•[" from æ«©n                                      */  
+/*  Problem: d488 "Êï∏Â≠óÁõ∏Âä†" from Â≠∏Âßä                                      */  
 /*  Language: C++                                                                 */  
 /*  Result: AC (34ms, 1656KB) on ZeroJudge                                        */  
 /*  Author: chchwy at 2009-11-30 13:46:25                                         */  
@@ -21,7 +21,7 @@ int add(int depth, int sum){
 }  
   
 int main(){  
-    int depth; //ªº∞j≤`´◊  
+    int depth; //ÈÅûËø¥Ê∑±Â∫¶  
     while(scanf("%d",&depth)==1){  
         if(depth==0) break;  
   

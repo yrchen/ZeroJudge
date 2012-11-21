@@ -20,7 +20,7 @@ int emptyBoard (char board[][12]){
   
 int readBoard (char board[][12]){  
     //read data  
-    for(int i=2;i<=2+8;++i) //8¦æ´Ñ½L+1¦æªÅ¦æ  
+    for(int i=2;i<=2+8;++i) //8è¡Œæ£‹ç›¤+1è¡Œç©ºè¡Œ  
         fgets(board[i]+2,20,stdin);  
   
     return emptyBoard(board);  
